@@ -1,0 +1,26 @@
+import pygame
+from sys import exit   #to close without error
+
+
+pygame.init()
+screen = pygame.display.set_mode((800,400))
+pygame.display.set_caption('night jog') #Title of game
+
+#we want a ideal framerate so there isn't an imbalance given the platform most likely this game will run at 60fps constantly
+#Need 60fps cieling and floor
+
+clock = pygame.time.Clock()
+
+sky_surface = pygame.image.load('sky.png')
+ground_surface = pygame.image.load('ground.png')
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    screen.blit(sky_surface, (0, 0))  # puts one surface on another the values move the surface.
+    screen.blit(ground_surface,(0, 300))
+
+    pygame.display.update()
+    clock.tick(60) #sets max frame rate
