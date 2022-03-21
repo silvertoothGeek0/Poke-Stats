@@ -1,0 +1,103 @@
+import colorama
+from colorama import Fore
+
+print()
+print(Fore.LIGHTYELLOW_EX + "(╯°□°)╯︵◓ I can tell you about POKEMON weakness, and efectiveness! ϞϞ(๑⚈ ․̫ ⚈๑)∩")
+print()
+q = input(Fore.MAGENTA + " ϞϞ(๑⚈ ․̫ ⚈๑)∩ Which would you like to know about?:")
+print()
+
+
+def weakness():
+    if q == "weakness":
+        q2 = input(Fore.BLUE + "╯°□°)╯︵◓ What types weakness would you like to know about?:")
+        if q2 == "fire":
+            print( q2 + " is weak to Ground, Rock, and Water")
+        if q2 == "water":
+            print(q2 + " is weak to Electric and Grass")
+        if q2 == "rock":
+            print(q2 + " is weak to Fighting, Grass, Ground, Steel, and Water")
+        if q2 == "electric":
+            print(q2 + " is weak to Ground")
+        if q2 == "normal":
+            print(q2 + " is weak to Fighting")
+        if q2 == "ice":
+            print(q2 + " is weak to Fighting, Fire, Rock, and Steel")
+        if q2 == "fighting":
+            print(q2 + " is weak to Fairy, Flying, and Psychic")
+        if q2 == "poison":
+            print(q2 + " is weak to Ground, and Psychic")
+        if q2 == "flying":
+            print(q2 + " is weak to Electric, Ice, and Rock")
+        if q2 == "ground":
+            print(q2 + " is weak to Grass, Ice, and Water")
+        if q2 == "psychic":
+            print(q2 + " is weak to Bug, Dark, and Ghost")
+        if q2 == "bug":
+            print(q2 + " is weak to Fire, Flying, and Rock")
+        if q2 == "ghost":
+            print(q2 + " is weak to Dark, and Ghost")
+        if q2 == "dragon":
+            print(q2 + " is weak to Dragon, and Fairy, Ice")
+        if q2 == "dark":
+            print(q2 + " is weak to Bug, Fairy, and Fighting")
+        if q2 == "steel":
+            print(q2 + " is weak to Fighting, Fire, and Ground")
+        if q2 == "fairy":
+            print(q2 + " is weak to Poison, and Steel")
+weakness()
+if(q == 'none' or q == 'nothing'):
+    print(Fore.RED + "（。々°） Oh well, your loss. （。々°）")
+    exit()
+
+print()
+def effectiveness():
+    if q == "effectiveness":
+        q2 = input(Fore.LIGHTCYAN_EX + "╯°□°)╯︵◓ What types effectiveness would you like to know about?:")
+        if q2 == "fire":
+            print(q2 + " is effective against Bug, Grass, Ice, and Steel")
+        if q2 == "water":
+            print(q2 + " is effective against Fire, Ground, and Rock")
+        if q2 == "rock":
+            print(q2 + " is effective against Bug, Fire, Flying, and Ice")
+        if q2 == "electric":
+            print(q2 + " is effective against Flying, and Water")
+        if q2 == "normal":
+            print(q2 + " is effective against...nobody.")
+        if q2 == "ice":
+            print(q2 + " is effective against Dragon, Flying, Grass, and Ground")
+        if q2 == "fighting":
+            print(q2 + " is effective against Dark, Ice, Normal, Rock, and Steel")
+        if q2 == "poison":
+            print(q2 + " is effective against Fairy, and Grass")
+        if q2 == "flying":
+            print(q2 + " is effective against Bug, Fighting, and Grass")
+        if q2 == "ground":
+            print(q2 + " is effective against Electric, Fire, Poison, Rock, and Steel")
+        if q2 == "psychic":
+            print(q2 + " is effective against Fighting, and Poison")
+        if q2 == "bug":
+            print(q2 + " is effective against Grass, Dark, and Psychic")
+        if q2 == "ghost":
+            print(q2 + " is effective against Ghost, Psychic")
+        if q2 == "dragon":
+            print(q2 + " is effective against Dragon")
+        if q2 == "dark":
+            print(q2 + " is effective against Ghost, and Psychic")
+        if q2 == "steel":
+            print(q2 + " is effective against Fairy, Ice, and Rock")
+        if q2 == "fairy":
+            print(q2 + " is effective against Fighting, Dark, and Dragon")
+    elif q =='weakness':
+        print()
+    else:
+        print(Fore.RED + "（。々°） That's not here, you need to restart the program and input either 'weakness' or 'effectiveness'. （。々°）")
+effectiveness()
+print()
+
+exit()
+
+
+
+
+
