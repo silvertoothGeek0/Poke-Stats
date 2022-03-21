@@ -1,0 +1,21 @@
+import turtle
+import turtle as t
+def draw_square():
+    window = turtle.Screen()
+    window.title('YEUH')
+    turtle.showturtle()
+    turtle.shape("turtle")
+    turtle.color("red")
+    turtle.pendown()
+    turtle.pencolor('green')
+    turtle.pensize(10)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+    turtle.forward(100)
+    turtle.left(90)
+draw_square()
+turtle.mainloop()
