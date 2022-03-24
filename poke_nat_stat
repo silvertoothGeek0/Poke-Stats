@@ -1,0 +1,60 @@
+import numpy as np
+import pandas as pd
+import colorama
+from colorama import Fore
+pd.set_option("display.max_rows", None, "display.max_columns", None)
+# so what I want to do for this is basically create a data frame with the row and column titles being the stat changes
+# and the center meat will have the natures just like in the image.
+
+nat_stats = {'Lower Attack':  ['Hardy', 'lonely', 'Adamant', 'Naughty', 'Brave'],
+        'Lower Defense': ['Bold', 'Docile', 'Impish', 'Lax', 'Relaxed'],
+        'Lower Sp.Attack':  ['Modest', 'Mild', 'Bashful', 'Rash', 'Quiet'],
+        'Lower Sp.Defense': ['Calm', 'Gentle', 'Careful', 'Quirky', 'Sassy'],
+        'Lower Speed': ['Timid', 'Hasty', 'Joly', 'Naïve', 'Serious'],
+        }
+nat_stats_2 = 'Increase Attack', 'Increase Defense', 'Increase Sp.Attack', 'Increase Sp.Defense', 'Increase Speed'
+df = pd.DataFrame(nat_stats, index= nat_stats_2)
+
+print(Fore.CYAN + 'I can tell you about the stat changes that increase due to pokemon natures!')
+
+print()
+print(Fore.LIGHTMAGENTA_EX + "commands to input below are: 'attack', 'speed', 'sp.defense', 'sp.attack', 'defense' ")
+print()
+q1 = input(Fore.LIGHTBLUE_EX + "Just type in which you would like to know:")
+print()
+print()
+
+def nat_effect():
+                if q1 == 'none':
+                        print(Fore.LIGHTRED_EX + 'Very well then, you have wasted my time and yours.')
+                        exit()
+                if q1 == 'attack':
+                        print(Fore.RED + df.iloc[[0]])
+                if q1 == 'defense':
+                        print(Fore.RED + df.iloc[[1]])
+                if q1 == 'sp.attack':
+                        print(Fore.RED + df.iloc[[2]])
+                if q1 == 'sp.defense':
+                        print(Fore.RED + df.iloc[[3]])
+                if q1 == 'speed':
+                        print(Fore.RED + df.iloc[[4]])
+nat_effect()
+
+if (q1 == 'attack' or q1 == 'defense' or q1 == 'speed' or q1 == 'sp.attack' or q1 == 'sp.defense' or q1 == 'none'):
+        nat_effect()
+else:
+        print(Fore.RED + "Hmm, I don't think that's here, or perhaps you misspelled. Please rerun the program, otherwise suck me bolls.")
+
+
+
+#in order to make a repeat so that it doesn't exit we can make a while loop and then just an if where if it equals to this value the
+#code will stop.
+#have to test my while loops somewhere else though. We don't want this crashing by mistake. 
+
+
+
+
+
+
+
+
