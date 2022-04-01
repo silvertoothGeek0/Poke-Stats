@@ -4,8 +4,14 @@ from colorama import Fore
 print()
 print(Fore.LIGHTYELLOW_EX + "(╯°□°)╯︵◓ I can tell you about POKEMON weakness, and efectiveness! ϞϞ(๑⚈ ․̫ ⚈๑)∩")
 print()
-q = input(Fore.MAGENTA + " ϞϞ(๑⚈ ․̫ ⚈๑)∩ Which would you like to know about?:")
+q = input(Fore.MAGENTA + " ϞϞ(๑⚈ ․̫ ⚈๑)∩ Which would you like to know about?:").strip()
 print()
+
+#AS SHOWN ABOVE YOU CAN ALSO SEE THAT YOU CAN ADD ON THE FUNCTION NECESSARY TO THE INPUT. 
+
+#q = q.strip().title() WITH THIS YOU CAN ESSENTIALLY MUSH FUNCTIONS TOGETHER
+
+#.title() capitalizes the first letter in the string, even if you add more than one.
 
 
 def weakness():
